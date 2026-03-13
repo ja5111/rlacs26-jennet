@@ -4,12 +4,6 @@ date: 2026-03-13
 categories: blog
 ---
 
----
-title: "Assignment 1: Emotional Word Frequency in Harry Potter"
-date: 2026-03-13
-categories: blog
----
-
 ## Feeling the Story: Emotional Word Frequency and Reader Enjoyment in Harry Potter Canon and Fanfiction
 
 *Computational Text Analysis by Jennet and Dalila*
