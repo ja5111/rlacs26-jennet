@@ -40,7 +40,7 @@ Our word list was small: four positive words (happy, love, win, brave) and four 
 
 In the heatmap, fear registers a raw count of 54 in *Deathly Hallows* — the single highest cell value in the entire visualization. However, the Voyant trend graph does not confirm this dominance in relative frequency terms. This discrepancy is itself a methodological finding: raw counts and relative frequencies can produce different interpretations of the same data.
 
-*[INSERT VOYANT IFRAME HERE]*
+<iframe style='width: 477px; height: 330px;' src='https://voyant-tools.org/tool/Trends/?query=los*&query=win*&query=brave*&query=hate*&query=love*&query=fear*&query=sad*&query=happy*&corpus=5c33f1b527a65033bb92cb17be37b676'></iframe>
 
 *Figure 1: Relative frequency of selected words across all five texts in Voyant Tools.*
 
