@@ -30,7 +30,7 @@ But the wordlist does not stay at function words. By the 50th or 100th word, mor
 
 The Bootstrap Consensus Tree clustering across MFW settings from 100 to 500 and reports only what holds consistently. This makes it a more reliable Stylo result, not a snapshot of one parameter choice but a consensus across many.
 
-![Figure 1: Bootstrap Consensus Tree at 100-500 MFW](/assets/images/figure1-bct.png)
+![Figure 1: Bootstrap Consensus Tree at 100-500 MFW](/rlacs26-jennet/assets/images/figure1-bct.png) 
 *Figure 1: Bootstrap Consensus Tree at 100-500 MFW*
 
 The BCT reveals two kinds of authors: those whose style is consistent enough for the algorithm to identify reliably, and those whose internal variety defeats it.
@@ -45,7 +45,7 @@ Wells produces the clearest result of all. *The Salvaging of Civilization* is al
 
 ## The PCA Loadings
 
-![Figure 2: Principal Component Analysis at 100 MFW](/assets/images/figure2-pca.png)
+![Figure 2: Principal Component Analysis at 100 MFW](/rlacs26-jennet/assets/images/figure2-pca.png)
 *Figure 2: Principal Component Analysis at 100 MFW*
 
 At 100 MFW, the first principal component, accounting for 21.3% of variance, separates action-driven narrative prose from argumentative, essayistic writing. Words like eyes, away, back, came, her, him, was, and had pulled in one direction. Words like world, are, most, much, this, has, more, and then pull in the other. This is a distinction between two fundamentally different modes of writing: narrative versus argument, fiction versus non-fiction, showing versus telling.
@@ -56,14 +56,14 @@ As MFW increases from 100 to 1000, something important happens. The central clus
 
 If Stylo reveals the grammar of style, TF-IDF reveals the vocabulary of content. Where Stylo asks "how does this author write?", TF-IDF asks "what does this text talk about?". Comparing the two PCA plots (at 100 and 3000 MFW) against what Stylo found makes the differences between these methods more visible.
 
-![Figure 3: TF-IDF at 100 MFW](/assets/images/figure3-tfidf-100.png)
+![Figure 3: TF-IDF at 100 MFW](/rlacs26-jennet/assets/images/figure3-tfidf-100.png)
 *Figure 3: TF-IDF at 100 MFW*
 
 Looking at the two most contrasting parameter settings (100 and 3000 MFW) reveals what happens as more vocabulary is included in the analysis. At 100 MFW, texts are spread across a wider horizontal range, with several notable outliers pulling in different directions. By 3000 MFW, the entire plot has shifted to the right and the central cluster of fiction texts had compressed noticeably together. This mirrors what Stylo showed at higher MFW settings; as words are included, the shared genre baseline of 1950s science fiction begins to dominate, pulling texts toward each other and smoothing over individual differences.
 
 There are two texts that remain at the extremes across both settings: *Jackie Sees a Star* which sits alone in the upper-left corner of the plot, and *The Salvaging of Civilization* which sits alone in upper-right. These two texts are maximally distant from each other and from everyone else. Wells's nonfiction isolation mirrors the Stylo result; its vocabulary of civilization, education, and governance has no equivalent anywhere in the fiction corpus. But Bradley's short story is a different kind of outlier. *Jackie Sees a Star* is the only text in the corpus narrated primarily from a child's perspective, and its distinctive vocabulary is simpler, and closer to everyday speech, which pushes the text far from the pulp adventure baseline that most other texts share. This is something Stylo partially captured (it was the most distant of Bradley's three texts in the cluster analysis) but TF-IDF makes it far more visible.
 
-![Figure 4: TF-IDF PCA at 3000 MFW](/assets/images/figure4-tfidf-3000.png)
+![Figure 4: TF-IDF PCA at 3000 MFW](/rlacs26-jennet/assets/images/figure4-tfidf-3000.png)
 *Figure 4: TF-IDF PCA at 3000 MFW*
 
 *The Ego Machine* is another persistent outlier, sitting alone on the left side of the plot at both settings. Its Hollywood setting gives it a content profile that no other text in the corpus shares. This is actually a case where TF-IDF is less informative than Stylo. The stylometric analysis connected *The Ego Machine* to *The Blue Behemoth* through their shared comedic tone, which is a genuinely interesting observation. TF-IDF, by contrast, simply isolates it as topically unusual without revealing what it shares with anything else.
